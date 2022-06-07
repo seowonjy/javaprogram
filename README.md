@@ -204,8 +204,9 @@ public class MouseListenerEx extends JFrame {
 -------------------------
 
 # javaprogram
-주제 : 
+주제 : 학생관리프로그램
 기능 
-1. 회원가입
-2. 로그인
-3. 제품판매 및 설명
+1. 정보 추가
+2. 삭제
+3. 검색
+4. 수정
