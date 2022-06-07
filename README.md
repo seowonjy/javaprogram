@@ -204,7 +204,7 @@ public class MouseListenerEx extends JFrame {
 -------------------------
 
 # javaprogram
-주제 : 쇼핑몰GUI
+주제 : 
 기능 
 1. 회원가입
 2. 로그인
