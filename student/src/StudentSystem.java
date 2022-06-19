@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -10,6 +9,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 public class StudentSystem extends javax.swing.JFrame {
+    
     private ArrayList<Student> studentList = new ArrayList<Student>();
     private DefaultListModel<String> listModel = new DefaultListModel<String>();
     
@@ -17,7 +17,7 @@ public class StudentSystem extends javax.swing.JFrame {
         initComponents();
     }
     
-  public void listUpdate() {
+    public void listUpdate() {
         listModel = new DefaultListModel<String>();
         for(int i = 0; i < studentList.size(); i++)
         {
@@ -26,7 +26,7 @@ public class StudentSystem extends javax.swing.JFrame {
         }
         studentListArea.setModel(listModel);
     }
-    
+   
     public void inputReset() {
         nameField.setText("");
         numberField.setText("");
@@ -43,8 +43,8 @@ public class StudentSystem extends javax.swing.JFrame {
         pictureField.setText("");
         introduceArea.setText("");
     }
-    
-    @SuppressWarnings("unchecked")                        
+   
+    @SuppressWarnings("unchecked")
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
@@ -104,19 +104,19 @@ public class StudentSystem extends javax.swing.JFrame {
 
         studentInformationInput.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "학생 정보 입력", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("양재백두체B", 0, 25))); // NOI18N
 
-        nameLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20)); 
+        nameLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         nameLabel.setText("이름");
 
-        numberLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20)); 
+        numberLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         numberLabel.setText("학번");
 
         majorLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         majorLabel.setText("학과");
 
-        gradeLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20)); 
+        gradeLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         gradeLabel.setText("학년");
 
-        dateLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20)); 
+        dateLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         dateLabel.setText("생년월일");
 
         phoneLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20));
@@ -128,15 +128,15 @@ public class StudentSystem extends javax.swing.JFrame {
         pictureLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         pictureLabel.setText("사진");
 
-        introduceLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20)); 
+        introduceLabel.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         introduceLabel.setText("프로필/자기소개");
 
         introduceArea.setColumns(20);
-        introduceArea.setFont(new java.awt.Font("맑은 고딕", 1, 15)); 
+        introduceArea.setFont(new java.awt.Font("맑은 고딕", 1, 15));
         introduceArea.setRows(5);
         jScrollPane1.setViewportView(introduceArea);
 
-        nameField.setFont(new java.awt.Font("맑은 고딕", 1, 18)); 
+        nameField.setFont(new java.awt.Font("맑은 고딕", 1, 18));
         nameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         numberField.setFont(new java.awt.Font("맑은 고딕", 1, 18));
@@ -160,15 +160,15 @@ public class StudentSystem extends javax.swing.JFrame {
         });
 
         buttonGroup1.add(Two);
-        Two.setFont(new java.awt.Font("맑은 고딕", 1, 15)); 
+        Two.setFont(new java.awt.Font("맑은 고딕", 1, 15));
         Two.setText("2학년");
 
         buttonGroup1.add(One);
-        One.setFont(new java.awt.Font("맑은 고딕", 1, 15)); 
+        One.setFont(new java.awt.Font("맑은 고딕", 1, 15));
         One.setText("1학년");
 
         buttonGroup1.add(Three);
-        Three.setFont(new java.awt.Font("맑은 고딕", 1, 15)); 
+        Three.setFont(new java.awt.Font("맑은 고딕", 1, 15));
         Three.setText("3학년");
 
         buttonGroup1.add(Four);
@@ -419,7 +419,7 @@ public class StudentSystem extends javax.swing.JFrame {
 
         studentListText.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "학생 목록", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("양재백두체B", 0, 25))); // NOI18N
 
-        deleteButton.setFont(new java.awt.Font("맑은 고딕", 1, 20)); // NOI18N
+        deleteButton.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         deleteButton.setText("삭제");
         deleteButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -427,7 +427,7 @@ public class StudentSystem extends javax.swing.JFrame {
             }
         });
 
-        modifyButton.setFont(new java.awt.Font("맑은 고딕", 1, 20)); // NOI18N
+        modifyButton.setFont(new java.awt.Font("맑은 고딕", 1, 20));
         modifyButton.setText("수정");
         modifyButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -535,8 +535,7 @@ public class StudentSystem extends javax.swing.JFrame {
         );
 
         pack();
-    }                     
-
+    }
     private void callActionPerformed(java.awt.event.ActionEvent evt) {                                     
         JFileChooser fs = new JFileChooser(new File("C:\\"));
         fs.setDialogTitle("불러 오기");
@@ -574,11 +573,17 @@ public class StudentSystem extends javax.swing.JFrame {
     }                                    
 
     private void comboOneActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
     }                                        
+
     private void comboTwoActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
     }                                        
-    private void comboThreeActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+    private void comboThreeActionPerformed(java.awt.event.ActionEvent evt) {                                           
+
     }                                          
+
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
         String name = nameField.getText();
         String number = numberField.getText();
@@ -609,6 +614,7 @@ public class StudentSystem extends javax.swing.JFrame {
         {
             studentList.add(student);
         }
+        listUpdate();
         inputReset();
     }                                         
 
@@ -703,7 +709,6 @@ public class StudentSystem extends javax.swing.JFrame {
         String search = gradeSearchField.getText();
         for(int i = 0; i < studentList.size(); i++)
         {
-
             Student student = studentList.get(i);
             if(student.getNumber().equals(search))
             {
@@ -744,7 +749,7 @@ public class StudentSystem extends javax.swing.JFrame {
                 studentSystem.setVisible(true);
             }
         });
-    }                  
+    }
     private javax.swing.JRadioButton Four;
     private javax.swing.JLabel ImageLabel;
     private javax.swing.JMenu Menu;
@@ -793,5 +798,5 @@ public class StudentSystem extends javax.swing.JFrame {
     private javax.swing.JPanel studentInformationInput;
     private javax.swing.JPanel studentInformationSearch;
     private javax.swing.JList<String> studentListArea;
-    private javax.swing.JPanel studentListText;                 
+    private javax.swing.JPanel studentListText;
 }
